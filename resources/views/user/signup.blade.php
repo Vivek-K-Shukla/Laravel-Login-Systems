@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col-md-4 col-md-offset-4" style="margin-top:20px;">
                 <h4>Registration</h4><hr>
-                <form action="{{url('register-user')}}" method="POST">
+                <form action="{{url('signup-user')}}" method="POST">
                     @if(Session::has('success'))
                     <div class="alert alert-success">{{Session::get('success')}}</div>
                     @endif
@@ -48,7 +48,7 @@
                     <div class="form-group">
                         <button class="btn btn-block btn-primary" type="submit">Register</button>
                     </div><br>
-                    <a href="{{url('/login')}}">Already Registered!! Login Here</a>
+                    <a href="{{url('/loginUser')}}">Already Registered!! Login Here</a>
                 </form>
 </div>
 </div>
